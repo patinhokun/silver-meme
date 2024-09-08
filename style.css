@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
+.gif {
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-group {
+    display: flex; /* Usamos Flexbox para alinhar os botões lado a lado */
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+button {
+    width: 150px;
+    height: 50px; /* Ajuste a altura dos botões conforme necessário */
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+    margin: 0 10px; /* Espaçamento entre os botões */
+}
+
+button.yes-btn {
+    background: #e94d58;
+}
+
+button.no-btn {
+    background: white;
+    color: #e94d58;
+    position: relative; /* Remover 'absolute' para permitir o movimento dentro do contêiner */
+    transition: transform 0.2s ease; /* Adiciona uma transição suave para o movimento */
+}
+
+/* Opcional: Para melhorar a visibilidade do botão ao ser movido */
+button.no-btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
